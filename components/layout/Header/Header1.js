@@ -14,20 +14,13 @@ const Header1 = ({
     return (
         <>
             <header>
-                <div className="header__top">
+                {/* <div className="header__top">
                     <div className="container">
                         <div className="row align-items-center justify-content-between">
-                            {/* <div className="col-lg-4 col-md-6 col-sm-12 order-2 order-lg-0">
-                                <div className="header__top-search">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search here..." />
-                                    </form>
-                                </div>
-                            </div> */}
                             <div className="col-lg-4 col-md-3 order-0 order-lg-2 d-none d-lg-block">
                                 <div className="header__top-logo logo text-lg-center">
                                     <Link href="/" className="logo-dark"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
-                                    <Link href="/" className="logo-light"><img src="/assets/img/logo/w_logo.png" alt="Logo" /></Link>
+                                    <Link href="/" className="logo-light"><img src="/assets/img/logo/w_logo2.png" alt="Logo" /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-12 col-sm-12 order-3 d-none d-sm-block">
@@ -52,17 +45,17 @@ const Header1 = ({
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div id="header-fixed-height" className={`${scroll ? "active-height" : ""}`} />
-                <div id="sticky-header" className={`tg-header__area ${scroll ? "sticky-menu" : ""}`}>
-                    <div className="container">
+                <div id="sticky-header" className= {`mt-20 tg-header__area ${scroll ? "sticky-menu" : ""}`}>
+                    {/* <div className="container"> */}
                         <div className="row">
                             <div className="col-12">
                                 <Menu handleMobileMenuOpen={handleMobileMenuOpen} handleSidebarOpen={handleSidebarOpen} offCanvasNav/>
                                 <MobileMenu handleMobileMenuClose={handleMobileMenuClose} />
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </div>
                 <Sidebar handleSidebarClose={handleSidebarClose} />
             </header>

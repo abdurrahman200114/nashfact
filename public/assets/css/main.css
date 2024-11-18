@@ -808,7 +808,7 @@ input[type=color] {
   margin: 0 0;
 }
 .breadcrumb-area {
-  margin: -1px 0 0;
+  /* margin: -1px 0 0; */
 }
 .breadcrumb-content {
   background: var(--tg-common-color-white);
@@ -1317,7 +1317,7 @@ input[type=color] {
   font-weight: var(--tg-fw-bold);
   text-transform: uppercase;
   color: var(--tg-heading-color);
-  padding: 23px 28px;
+  padding: 23px 26px;
   display: inline-flex;
   line-height: 1;
   position: relative;
@@ -1517,7 +1517,7 @@ input[type=color] {
   display: block;
   position: relative;
   margin: 0 6px;
-  background: var(--tg-common-color-white);
+  background: var(--tg-common-color-gray);
   border-radius: 35px;
   cursor: pointer;
   transition: all 0.3s ease-out 0s;

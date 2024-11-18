@@ -24,7 +24,7 @@ export default function Sidebar({handleSidebarClose}) {
                     <div className="offCanvas__contact">
                         <h4 className="title">Get In Touch</h4>
                         <ul className="offCanvas__contact-list list-wrap">
-                            <li><i className="fas fa-envelope-open" /><Link href="/mailto:info@webmail.com">info@webmail.com</Link></li>
+                            <li><i className="fas fa-envelope-open" /><Link href="mailto:info@webmail.com">info@webmail.com</Link></li>
                             <li><i className="fas fa-phone" /><Link href="/tel:88899988877">888 999 888 77</Link></li>
                             <li><i className="fas fa-map-marker-alt" /> 12/A, New Booston, NYC</li>
                         </ul>
