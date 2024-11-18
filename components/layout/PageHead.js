@@ -5,7 +5,7 @@ const PageHead = ({ headTitle }) => {
         <>
             <Head>
                 <title>
-                    {headTitle ? headTitle : "Sarsa - News & Magazine HTML Template"}
+                    {headTitle ? headTitle : "Home - Nashfact"}
                 </title>
                 <link rel="shortcut icon" href="/assets/img/favicon.png" />
                 <link rel="preconnect" href="https://fonts.bunny.net" />

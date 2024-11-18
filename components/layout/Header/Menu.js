@@ -43,20 +43,17 @@ export default function Menu({ handleMobileMenuOpen, handleSidebarOpen, offCanva
                     <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                         
                         <ul className="navigation">
-                            <li className="menu-item-has-children"><Link href="#">Home</Link>
+                            <li className= {router.pathname == "/" ? "active" : ""}><Link href="/">Home</Link>
+                            </li>
+                            <li className={router.pathname == "/about" ? "active" : ""}><Link href="/about">About Us</Link>
+                            </li>
+                            <li className="menu-item-has-children"><Link href="/">Category</Link>
                                 <ul className="sub-menu">
-                                    <li className={router.pathname == "/" ? "active" : ""}><Link href="/">Home Default</Link></li>
-                                    <li className={router.pathname == "/index-2" ? "active" : ""}><Link href="/index-2">Home Interior</Link></li>
-                                    <li className={router.pathname == "/index-3" ? "active" : ""}><Link href="/index-3">Home Travel</Link></li>
-                                    <li className={router.pathname == "/index-4" ? "active" : ""}><Link href="/index-4">Home Technology</Link></li>
-                                    <li className={router.pathname == "/index-5" ? "active" : ""}><Link href="/index-5">Home NFT</Link></li>
-                                    <li className={router.pathname == "/index-6" ? "active" : ""}><Link href="/index-6">Home Fashion</Link></li>
-                                    <li className={router.pathname == "/index-7" ? "active" : ""}><Link href="/index-7">Home Adventure</Link></li>
-                                    <li className={router.pathname == "/index-8" ? "active" : ""}><Link href="/index-8">Home Minimal</Link></li>
+                                    <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">Lifestyle</Link></li>
+                                    <li className={router.pathname == "/travel" ? "active" : ""}><Link href="/travel">Travel</Link></li>
                                 </ul>
                             </li>
-                            <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">Lifestyle</Link></li>
-                            <li className={router.pathname == "/travel" ? "active" : ""}><Link href="/travel">Travel</Link></li>
+
                             <li className="menu-item-has-children"><Link href="#">Post Type</Link>
                                 <ul className="sub-menu">
                                     <li className={router.pathname == "/blog" ? "active" : ""}><Link href="/blog">Our Blog</Link></li>
