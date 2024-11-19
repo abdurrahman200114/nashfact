@@ -43,7 +43,7 @@ export default function Home1() {
                                 <div className="tgbanner__five-content">
                                     <ul className="tgbanner__content-meta list-wrap">
                                         <li><span className="by">By</span> <Link href="/blog">alonso d.</Link></li>
-                                        <li>nov 21, 2022</li>
+                                        <li>nov 21, 2024</li>
                                     </ul>
                                     <h2 className="title tgcommon__hover"><Link href="/blog/98">The multiverse is a hypothetical group of multiple universes.</Link></h2>
                                 </div>

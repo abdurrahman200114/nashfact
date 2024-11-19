@@ -11,14 +11,15 @@ export default function Menu({ handleMobileMenuOpen, handleSidebarOpen, offCanva
     const [searchToggle, setSearchToggle] = useState(false)
     const searchHandle = () => setSearchToggle(!searchToggle)
 
+    const customLogoStyle = {
+        marginLeft: '20px'
+    };
+
     return (
         <>
             <div className="tgmenu__wrap">
                 <nav className="tgmenu__nav">
-                    <div className="logo d-block d-lg-none">
-                        <Link href="/" className="logo-dark"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
-                        <Link href="/" className="logo-light"><img src="/assets/img/logo/w_logo.png" alt="Logo" /></Link>
-                    </div>
+
                     {logoAlt &&
                         <div className="d-flex gap-4 align-items-center">
                             <div className="offcanvas-toggle" onClick={handleSidebarOpen}>
@@ -29,27 +30,30 @@ export default function Menu({ handleMobileMenuOpen, handleSidebarOpen, offCanva
                             </div>
                         </div>
                     }
+                    
                     {offCanvasNav &&
                         <div className="offcanvas-toggle" onClick={handleSidebarOpen}>
                             <a href="#"><i className="flaticon-menu-bar" /></a>
                         </div>
                     }
+                    <div className="logo d-block" style={customLogoStyle}>
+                        <Link href="/" className="logo-dark"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
+                        <Link href="/" className="logo-light"><img src="/assets/img/logo/w_logo.png" alt="Logo" /></Link>
+                    </div>
                     <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                        
                         <ul className="navigation">
-                            <li className="menu-item-has-children"><Link href="#">Home</Link>
+                            <li className= {router.pathname == "/" ? "active" : ""}><Link href="/">Home</Link>
+                            </li>
+                            <li className={router.pathname == "/about" ? "active" : ""}><Link href="/about">About Us</Link>
+                            </li>
+                            <li className="menu-item-has-children"><Link href="/">Category</Link>
                                 <ul className="sub-menu">
-                                    <li className={router.pathname == "/" ? "active" : ""}><Link href="/">Home Default</Link></li>
-                                    <li className={router.pathname == "/index-2" ? "active" : ""}><Link href="/index-2">Home Interior</Link></li>
-                                    <li className={router.pathname == "/index-3" ? "active" : ""}><Link href="/index-3">Home Travel</Link></li>
-                                    <li className={router.pathname == "/index-4" ? "active" : ""}><Link href="/index-4">Home Technology</Link></li>
-                                    <li className={router.pathname == "/index-5" ? "active" : ""}><Link href="/index-5">Home NFT</Link></li>
-                                    <li className={router.pathname == "/index-6" ? "active" : ""}><Link href="/index-6">Home Fashion</Link></li>
-                                    <li className={router.pathname == "/index-7" ? "active" : ""}><Link href="/index-7">Home Adventure</Link></li>
-                                    <li className={router.pathname == "/index-8" ? "active" : ""}><Link href="/index-8">Home Minimal</Link></li>
+                                    <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">Lifestyle</Link></li>
+                                    <li className={router.pathname == "/travel" ? "active" : ""}><Link href="/travel">Travel</Link></li>
                                 </ul>
                             </li>
-                            <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">Lifestyle</Link></li>
-                            <li className={router.pathname == "/travel" ? "active" : ""}><Link href="/travel">Travel</Link></li>
+
                             <li className="menu-item-has-children"><Link href="#">Post Type</Link>
                                 <ul className="sub-menu">
                                     <li className={router.pathname == "/blog" ? "active" : ""}><Link href="/blog">Our Blog</Link></li>
@@ -64,8 +68,6 @@ export default function Menu({ handleMobileMenuOpen, handleSidebarOpen, offCanva
                             <li className="mode-switcher">
                                 <ThemeSwitch />
                             </li>
-                            <li className="user"><Link href="#"><i className="far fa-user" /></Link></li>
-                            <li className="header-cart"><Link href="#"><i className="far fa-shopping-basket" /></Link></li>
                             <li className="header-search"><Link href="#"><i className={`${searchToggle ? "far fa-search fa-times" : "far fa-search"} `} onClick={searchHandle} /></Link>
                                 <div className="header__style-two">
                                     <div className={`header__top-search ${searchToggle ? "d-block" : "d-none"}`}>
