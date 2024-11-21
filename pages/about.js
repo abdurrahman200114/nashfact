@@ -28,7 +28,7 @@ export default function AboutUs(){
                                             <h2 className="title">Nabeil Schaik</h2>
                                             <h4>Founder of Nashfact</h4>
 
-                                            <div className="about-details-content text-justify ">
+                                            <div className="about-details-content  ">
                                                 <p>Nabeel Shaikh (aka Nabeil Schaik), a seasoned financial professional, a maestro in investment banking, and a serial entrepreneur known for his startup accelerator skills, is the founder of Nashfact. This online publishing platform serves as a hub for authentic information from the business world, featuring insights into new business trends, startup stories, and other valuable learning content. </p>
                                                 <p>He is the co-founder of multiple ventures and a Financial Advisor at a prominent GCC-based unicorn. He has honed his vast 18 years of diversified experience in Pakistan, including a decade in the UK and GCC. </p>
                                                 <p>He is recognized for his Angel Investing, and his entrepreneurial journey has seen him Co-Found Ed-Watch (edwatch.org), an edtech startup launched in 2021. Nabeil spearheads Strategic Partnerships to expand into international markets and drives Product Development initiatives. Ed-Watch, a multi-million-dollar startup, offers specialized training specifically tailored for finance professionals. </p>
